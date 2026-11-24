@@ -17,11 +17,10 @@
 <meta property="og:url" content="https://talvoco.com/">
 <meta property="og:image" content="https://talvoco.com/assets/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="assets/css/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Talvoco","url":"https://talvoco.com","logo":"https://talvoco.com/assets/img/mark.png","email":"talvocotech@gmail.com","sameAs":["https://www.instagram.com/talvoco"],"description":"Software studio: AI automation, custom software and web apps for businesses worldwide."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Talvoco","url":"https://talvoco.com","logo":"https://talvoco.com/assets/img/mark.png","image":"https://talvoco.com/assets/img/og-image.jpg","email":"talvocotech@gmail.com","areaServed":"Worldwide","sameAs":["https://www.instagram.com/talvoco"],"description":"Software studio: AI automation, custom software and web apps for businesses worldwide.","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Automation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom Software"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Web and Mobile Apps"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Assistants and Chatbots"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -29,7 +28,7 @@
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="Talvoco home"><img src="assets/img/logo-dark.webp" alt="Talvoco Software Studio" width="180" height="51"></a>
     <nav id="nav" class="nav" aria-label="Main">
-      <a href="#services">Services</a><a href="#approach">Approach</a><a href="#why">Why Talvoco</a><a href="#technology">Technology</a><a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#approach">Approach</a><a href="#why">Why Talvoco</a><a href="#technology">Technology</a><a href="#contact">Contact</a><a class="btn btn-gold nav-cta" href="#contact">Book a free consultation</a>
     </nav>
     <a class="btn btn-gold btn-sm hide-sm" href="#contact">Book a free consultation</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
@@ -46,9 +45,9 @@
     <circle cx="470" cy="150" r="4" fill="#E8CC8F"/><circle cx="380" cy="300" r="3" fill="#C9A96A"/><circle cx="520" cy="420" r="3" fill="#C9A96A"/>
     <path d="M470 150L380 300L520 420" fill="none" stroke="#C9A96A" stroke-opacity=".35"/></svg>
   <div class="wrap hero-in">
-    <p class="eyebrow">Software Studio · Serving clients worldwide</p>
+    <p class="eyebrow">Software Studio<span class="hide-xs"> · Serving clients worldwide</span></p>
     <h1>AI and software that make <span class="gold-text">business simpler.</span></h1>
-    <p class="lead">We design and build AI automation, custom software and web apps that remove manual work, connect your tools and help your team move faster.</p>
+    <p class="lead">We design and build AI automation, custom software and web apps that remove manual work<span class="hide-xs">, connect your tools and help your team move faster</span>.</p>
     <div class="cta-row"><a class="btn btn-gold" href="#contact">Book a free consultation</a><a class="btn btn-ghost" href="#services">Explore services</a></div>
     <ul class="pills" aria-label="What we do"><li>AI Automation</li><li>Custom Software</li><li>Web Apps</li></ul>
   </div>
@@ -59,7 +58,7 @@
     <p class="eyebrow">What we do</p>
     <h2>Practical technology, built around your business</h2>
     <p class="sub">From a first idea to a live product, one team takes care of strategy, design and engineering.</p>
-    <div class="grid3">
+    <div class="grid3 snap">
       <article class="panel reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/><circle cx="12" cy="12" r="3.5"/></svg></span><h3>AI Automation</h3><p>Automate repetitive work such as reports, data entry, follow-ups and approvals with AI workflows that fit the way you already operate.</p></article>
       <article class="panel reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><h3>Custom Software</h3><p>Dashboards, internal tools and platforms built to your exact process, secure, scalable and easy for your team to use.</p></article>
       <article class="panel reveal"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3>Web &amp; Mobile Apps</h3><p>Fast, modern websites and apps that look great on every device and turn visitors into customers.</p></article>
@@ -67,6 +66,19 @@
       <article class="panel reveal"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.3 11l7.4-4M8.3 13l7.4 4"/></svg></span><h3>Integrations &amp; APIs</h3><p>Connect the tools you already use, so data flows between systems without copy and paste.</p></article>
       <article class="panel reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span><h3>Product Design (UI/UX)</h3><p>Clear, elegant interfaces designed around real users, from first sketch to polished product.</p></article>
     </div>
+  </div>
+</section>
+
+<section class="section outcomes" aria-label="What you get">
+  <div class="wrap">
+    <p class="eyebrow">What you get</p>
+    <h2>Results you can feel from week one</h2>
+    <ul class="grid4">
+      <li class="reveal"><h3>Less manual work</h3><p>Repetitive tasks handled automatically, so your team focuses on what matters.</p></li>
+      <li class="reveal"><h3>Connected tools</h3><p>Your systems talk to each other and data stays accurate everywhere.</p></li>
+      <li class="reveal"><h3>Faster delivery</h3><p>Short build cycles with regular demos and a clear plan from day one.</p></li>
+      <li class="reveal"><h3>Ongoing support</h3><p>We stay with you after launch, improving as your business grows.</p></li>
+    </ul>
   </div>
 </section>
 
@@ -108,6 +120,20 @@
   </div>
 </section>
 
+<section id="faq" class="section alt">
+  <div class="wrap faq-wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>Questions, answered</h2>
+    <div class="faq">
+      <details><summary>How does the free consultation work?</summary><p>You tell us what you want to improve in a short call or by message. We listen, ask a few questions and suggest the simplest way forward, with no obligation.</p></details>
+      <details><summary>How long does a project take?</summary><p>It depends on scope. Small automations can be ready in days, larger platforms take weeks. After the consultation we give you a clear plan and timeline.</p></details>
+      <details><summary>How does pricing work?</summary><p>We quote per project after understanding your needs, so you know the cost before we start. There are no hidden charges.</p></details>
+      <details><summary>Which time zones do you work in?</summary><p>We work with clients worldwide and arrange calls and updates at times that suit your team.</p></details>
+      <details><summary>Who owns the work and my data?</summary><p>You do. Your data stays yours, and we agree ownership of the finished work in writing before we begin.</p></details>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="section">
   <div class="wrap split">
     <div>
@@ -120,7 +146,7 @@
         <li><span>Instagram</span><a href="https://www.instagram.com/talvoco" target="_blank" rel="noopener">@talvoco</a></li>
       </ul>
     </div>
-    <form id="form" class="form" novalidate>
+    <form id="form" class="form" novalidate aria-describedby="note">
       <label>Your name<input name="name" required autocomplete="name"></label>
       <label>Email<input name="email" type="email" required autocomplete="email"></label>
       <label>Company <small>(optional)</small><input name="company" autocomplete="organization"></label>
@@ -136,10 +162,13 @@
   <div class="wrap foot">
     <div class="foot-brand"><img src="assets/img/mark.png" alt="" width="44" height="44"><p>Talvoco is a software studio making AI simpler for business.</p></div>
     <nav aria-label="Footer"><a href="#services">Services</a><a href="#approach">Approach</a><a href="#why">Why Talvoco</a><a href="#technology">Technology</a><a href="#contact">Contact</a></nav>
-    <div class="foot-links"><a href="https://www.instagram.com/talvoco" target="_blank" rel="noopener">Instagram</a><a href="mailto:talvocotech@gmail.com">Email</a><a href="https://wa.me/919656748727" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div class="foot-links"><a href="https://www.instagram.com/talvoco" target="_blank" rel="noopener">Instagram</a><a href="mailto:talvocotech@gmail.com">Email</a><a href="https://wa.me/919656748727" target="_blank" rel="noopener">WhatsApp</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
   </div>
-  <p class="copy">© <span id="yr">2026</span> Talvoco. All rights reserved.</p>
+  <p class="copy">© <span id="yr">2026</span> Talvoco. Serving clients worldwide. All rights reserved.</p>
 </footer>
+<a class="wa-float" href="https://wa.me/919656748727" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.7 8.5c.3 3 3.3 6 6.3 6.3l1.3-1.3-2.2-1-1 .7a5 5 0 0 1-2.5-2.5l.7-1-1-2.2z"/></svg></a>
+<div class="m-bar"><a class="m-main" href="#contact">Book a free consultation</a><a class="m-wa" href="https://wa.me/919656748727" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg></button>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
