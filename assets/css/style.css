@@ -219,3 +219,16 @@ a.soc:hover,.ci:hover .soc{background:linear-gradient(135deg,#E8CC8F,#C9A96A 55%
 .foot-links a.soc svg,.contact-list .soc svg{width:22px;height:22px}
 @media (max-width:600px){.contact-list span.soc,.foot-links .socials a.soc{width:44px;height:44px}.contact-list span.ct{font-size:16px}}
 @media (max-width:360px){.contact-list span.ct{font-size:14.5px}.ci{gap:12px;padding:10px 12px}}
+
+/* phone hero: title top, animated T in the middle, buttons at the bottom of the first screen */
+@media (max-width:600px){
+ .hero{padding:0;display:flex;min-height:calc(100svh - 64px)}
+ .hero-in{display:flex;flex-direction:column;flex:1;padding:34px 0 26px}
+ .hero-top .lead{margin-bottom:0}
+ .hero .hero-art{display:block!important;position:static;flex:1 1 auto;width:min(290px,76%);height:auto;min-height:150px;max-height:300px;margin:14px auto;opacity:1;align-self:center}
+ .hero-bottom .cta-row{margin-top:0}
+ .hero-bottom .pills{margin-top:22px}
+}
+@media (max-width:600px) and (max-height:700px){.hero .hero-art{min-height:110px;max-height:170px;margin:8px auto}.hero-in{padding-top:24px}}
+@media (max-width:600px){.hero{justify-content:center}.hero-in{flex:0 1 92%;width:92%;margin:0 auto}}
+@media (max-width:600px){.hero .hero-art path[stroke="url(#g1)"]{stroke-width:2.6}.hero .hero-art circle{stroke-opacity:.5}}
