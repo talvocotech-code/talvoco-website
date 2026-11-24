@@ -199,3 +199,23 @@ body{background:#fff;color:var(--ivory)}
 .legal a{color:var(--gold1)}
 @media (max-width:820px){.nav{background:rgba(255,255,255,.98);border-bottom:1px solid var(--line);box-shadow:0 20px 30px -24px rgba(11,18,32,.3)}.nav a{border-bottom-color:var(--line)}.nav a:not(.btn){color:var(--ivory)}.nav .nav-cta{color:#101522!important}}
 @media (max-width:600px){.hero-art{display:none}.glow{opacity:.8}.grid3.snap .panel{box-shadow:0 12px 28px -22px rgba(11,18,32,.4)}}
+
+/* social icons */
+.soc{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(176,138,74,.5);color:#8A6A2F;background:#fff;transition:background .25s,color .25s,transform .2s,border-color .25s;flex:none}
+.soc svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+a.soc:hover,.ci:hover .soc{background:linear-gradient(135deg,#E8CC8F,#C9A96A 55%,#B08A4A);color:#101522;border-color:transparent;transform:translateY(-2px)}
+.contact-list li{display:block;border-bottom:0;padding:0}
+.ci{display:flex;align-items:center;gap:16px;padding:12px 16px;border:1px solid var(--line);border-radius:16px;background:#fff;transition:border-color .2s,box-shadow .2s}
+.ci:hover{border-color:rgba(176,138,74,.55);box-shadow:0 16px 30px -22px rgba(176,138,74,.6)}
+.ct{display:grid;font-size:17px;color:var(--ivory);line-height:1.3}.ct small{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6A2F;margin-bottom:2px}
+.socials{display:flex;gap:12px;margin-bottom:8px}
+.site-footer .socials a{padding:0}
+@media (max-width:600px){.soc{width:44px;height:44px}.ci{padding:11px 14px;gap:14px}.ct{font-size:16px}.socials{margin-bottom:6px}}
+/* fixes: icon centring + narrow-screen overflow */
+.contact-list span.soc{width:46px;height:46px;font-size:inherit;letter-spacing:normal;text-transform:none;color:#8A6A2F;display:inline-grid}
+.contact-list span.ct{width:auto;min-width:0;font-size:17px;letter-spacing:normal;text-transform:none;color:var(--ivory);overflow-wrap:anywhere}
+.ci:hover span.soc{color:#101522}
+.foot-links .socials a.soc{display:inline-grid;padding:0;width:46px;height:46px}
+.foot-links a.soc svg,.contact-list .soc svg{width:22px;height:22px}
+@media (max-width:600px){.contact-list span.soc,.foot-links .socials a.soc{width:44px;height:44px}.contact-list span.ct{font-size:16px}}
+@media (max-width:360px){.contact-list span.ct{font-size:14.5px}.ci{gap:12px;padding:10px 12px}}
